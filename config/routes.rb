@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get '/dashboard' => 'pages#dashboard'
   resources :books
 
   devise_for :users
